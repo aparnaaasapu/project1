@@ -1,0 +1,185 @@
+Delivered-To: aparnaaasapu@gmail.com
+Received: by 2002:a05:7010:c809:b0:533:6dc2:7ac7 with SMTP id jr9csp1909695mdb;
+        Sun, 21 Jun 2026 23:26:41 -0700 (PDT)
+X-Received: by 2002:a2e:b888:0:b0:396:7547:439e with SMTP id 38308e7fff4ca-3998e406e3emr26897121fa.7.1782109600921;
+        Sun, 21 Jun 2026 23:26:40 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1782109600; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=d9uteKGQ1kgp+FXwLLFPUUUBxBPAlmwUNYW1Juv3HmWETt1Bfdiff4pwPHT/jvN4gB
+         uFj+7ZclOGNUhWSuNaZb2TaLg1cB5azGtFhEvyKQ9UktX91gI3LaKwJpM+cUOqndMzWc
+         Ow/H7qeysYhjw8P6zLQLmo4Zi8lhGyPVhvpwOr9OICvwWdWrRGm7MrLtQLR0brVU5JJk
+         nP8LindhaLpaAljjGVZZHrLrox60sGQYh3iJPsdrqVhMq2YPUKQ9vp8gIz1nzMTwfj5+
+         scVpv/Y+Lo/aqhF5cQ1f+yGrzSDXotFjtzoL6A0PB8UQlP+LYVjkmd6gXmcrfechiBRw
+         pB/g==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=VQLL+c6MWlXkZev9p/8UQwbeetElxTuujLmOc65NAhg=;
+        fh=QFNz3NhO2EiKANw1ZAdnkjkD1WF0LpmYkbWcHtJ4hrY=;
+        b=HCTDBweo5PfM0W7Ru9ZZkSxq2P3i5hrGlhiuvPyUNDkHMT9fKFQj6hn/jHn1OwGrRr
+         nDBVRC42iUqrOAspsbChuYTdukN9xyuNDMysQpPbmUjN1psKuYns2O7mmpwWpriuxUD2
+         7e3CHSY9Th8IJarofOtH23fxn/3gHcQpIJ9LwomUStXBOUnKfT73eU/s4LKz6HNvGDqi
+         HV9q8756yw462P19LIUZ395Yj5FKjbxsC3U6CguKsCf/lrzn4e5M0TvIIBNxV6BUar3f
+         +9ypnT7xSM3R/BU1eoa3u1ppzVDxrgJPVmvYqtBrB6J2DM9w4FEzsqMji1SJggeZrt8t
+         7mHQ==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=J9e+Vmd6;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of aligirenuka2007@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=aligirenuka2007@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <aligirenuka2007@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id 38308e7fff4ca-3999b212d19sor5296751fa.19.2026.06.21.23.26.40
+        for <aparnaaasapu@gmail.com>
+        (Google Transport Security);
+        Sun, 21 Jun 2026 23:26:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of aligirenuka2007@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=J9e+Vmd6;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of aligirenuka2007@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=aligirenuka2007@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1782109600; cv=none;
+        d=google.com; s=arc-20240605;
+        b=BCf0hDqlnIhpVeuzmFxMDqPpZzyZLPBPqduahTPuT84frepr+FVKJw8A2trshqtM0z
+         TsIi50EgIRvNyDiaL0y4Fm9czuIkYnTLVoLsfEIvGIdE7SvSWlC+DZSxHMMPoV3Hl2jN
+         Q+OOI4SY4lzv141GeqoW0ccJP9uUb5chDLAhGlZZD+5IJGGMnnjc5/KDt26CUcWREaDR
+         WPo6zZVxRmImGnI7Vo0eHnszNsGzW5nveXiMYBTNbZ0apE2YXQ8CdDbFPNQywwB6kmKD
+         cUFdnfY5Eo9anxCNYBxI7FmmYzDBtX9MTXNMKHXMZ15pkL0Ge/a7DfhR0WF+a8o7SWC0
+         nbyQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=VQLL+c6MWlXkZev9p/8UQwbeetElxTuujLmOc65NAhg=;
+        fh=QFNz3NhO2EiKANw1ZAdnkjkD1WF0LpmYkbWcHtJ4hrY=;
+        b=hjxUaSqvjmRoLrNvtANJyeVMbwRTRnXxIo0fcap8/Ky6GlxiNkBBYDjEsDjoVqbqUd
+         43txVRI8bNxa8gLWUCW6Y/rLTK0OqmWXteQIYWu8zyizVwDoaS5qmbnuoxx3grjH9Qpc
+         08Z6rJ4Jt+O3ztYgLs/yR/digmP/r5sxm1R6Z+KRHPqDXx9bPwPfqLTwMeDo501ZzWBY
+         Xx6Jg/FXVzK/3PbAQIO9jbmU65aN+eNDdSKAyyKrqWBPTagygfwYRtBQrYb2SK0xOOX1
+         THhqzEaMBc4EU879ptGulVx6uU2SVMBO25UsfHtMlvTNGjIQ70g7RdrknScROVBt0P8j
+         gbzQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1782109600; x=1782714400; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=VQLL+c6MWlXkZev9p/8UQwbeetElxTuujLmOc65NAhg=;
+        b=J9e+Vmd6H+TxhMJVg+r+s2R4MnQN6BD8P03X6dGlD3M2RqT6f88eI4TwEr09meiEt9
+         g9IwuFckLDDI7qoz9Arx99Zhhht9hR3S2W8o6lt8LhjNeAt8j2aBhu/C7vTaZ/yff4Uf
+         hZ315A8Q93IRomj4a5wZiHNeSSNfeivZwumWVaZecLWE61vnqv2a9312o1s6ezSBqCQM
+         HGfT4TrmObYNPD+Gz52zARPlUcX/9lYA+9ycJ4yWmZfVESLdnCxkX8X3RDoyQ1v0iSb9
+         ajBAS41NGDwX0JV+Yl+FqYawgWebFrxvmu197TYm1ppaUKN6Yjg2hhLPG6HPbi35GyvQ
+         1FaQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1782109600; x=1782714400;
+        h=to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=VQLL+c6MWlXkZev9p/8UQwbeetElxTuujLmOc65NAhg=;
+        b=fF7kX893Wh8yCuP8HvVAn2LLRgNMY1KoQSol0QKxgpZOHXHA+JivPkUnoW82d9XPm4
+         yfNQo/z8EMdYosZXHb3Q/cJbF5z4JH2/HYk8SEaKjvO6eBkQFma3dFmdpgjg/21+VFSJ
+         Jwcl/eqRaBnZ4g2XbF0lzWn+kMEiKVv9SlFvfFQy7927HVKx8WPNZPLBs03vuHqJaXiw
+         uJNVT6YbmEgCLloC/GvOZAtKOllIMtgKO1lYNBK6nCRX0qFpsPz3a+qNwCOPOfhcppZ2
+         itY34pRnS+SdRemfDQZCArC53RT1fF1JsGTRpKlTHzEkL28Al8wmoJR+3q1L8mEp4dCx
+         3o4w==
+X-Gm-Message-State: AOJu0YwyA4smv8A4XmSZ0oDNWCQU+AZcTTidawshOsEe4YBBGibo7ssY
+	4tCGzPwmVQnkj1K6m8hQayHzpxLHhBfKBjCa3+3hMSfs5WShPpakgkVNq4/Erq+KbVRy0c7zEn0
+	M48LNCQSeeKXqu7XpwujxmuVwDH9Wgu98OgIdPT8=
+X-Gm-Gg: AfdE7cnrBTn3SBAh4UkKXOQFFZJ0xO6dHTjFtkjdxowOsDoQtGtZTzYOIsg3/xvUlJq
+	EzhWNIY15BoRDyyQ6iWLJPms/cAFvYtGGT/cTTz8BpsDQ9lricw3IGYKNztU3YHOoFL5qoluBxf
+	LbWODEgi3cmpV0qHv9qP/w4PiLsudSgpOQpUK/T0RAXmwXAw/rj9iJYqtnOjShIZU2G93bKq1fC
+	Sg5KkpnOFCrTleJeMhePWknec1fceXq9e9UAetV/xLgntoXbMKCqvtowVjft52RuO1wHJfy
+X-Received: by 2002:a05:651c:991:b0:396:8ac1:53a7 with SMTP id
+ 38308e7fff4ca-3998e406f97mr28346961fa.8.1782109600169; Sun, 21 Jun 2026
+ 23:26:40 -0700 (PDT)
+MIME-Version: 1.0
+From: Renuka Devi <aligirenuka2007@gmail.com>
+Date: Mon, 22 Jun 2026 11:56:18 +0530
+X-Gm-Features: AVVi8CdEieYTwwqjh_tFXJOInX07V4puLlTOcYBdCTyNKR8nUji2-avHYbPy-z8
+Message-ID: <CAADV9LexxGxT5=zNUT5fK0N6vEHOt1j5RwDt+KvLDBimfmAxbQ@mail.gmail.com>
+Subject: project1 report analysis
+To: "aparnaaasapu@gmail.com" <aparnaaasapu@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000ab41970654d1b952"
+
+--000000000000ab41970654d1b952
+Content-Type: text/plain; charset="UTF-8"
+
+PROJECT-1
+                                         REPORT ANALYSIS
+1.VPC Creation:
+ 1.1 Open the AWS management console and navigate to vpc
+ 1.2 Select create vpc and choose vpc and more
+ 1.3 Configure the ipv4 CIDR block,availability zones,and public/private
+subnets
+ 1.4 Create the vpc and verify the resource map
+
+2.EC2 Creation:
+ 2.1 Navigate to the EC2 dashboard
+ 2.2 Launch an ubuntu instance
+ 2.3 Create or select an existing key pair
+ 2.4 Configure network settings using the custom vpc
+
+3.Connecting to EC2 using MobaXterm:
+ 3.1 Open MobaXterm
+ 3.2 Create an SSH session using the EC2 public IP address
+ 3.3 Set the username as ubuntu
+ 3.4 Import the .pem key file and connect
+
+4.Installing Python:
+ -> sudo apt update
+ -> sudo apt install python3 -y
+ -> sudo apt install python3-pip -y
+ -> python3 -m http.sever 8000
+
+ OUTPUT-http://<EC2_PUBLIC_IP>:8000
+
+5.Configure Security:
+ 5.1 Add an inbound security group rule to allow TCP traffic on port 8000
+ 5.2 Configure NACL rules to test traffic blocking and filtering
+
+SUMMARY:
+      This project demonstrates deploying a python web server on AWS
+infrastructure.A custom VPC was created eith specific CIDR
+blocks,availability zones,and public/private subnets,followed by launching
+an ubuntu EC2 instance connected to the VPC.Remote access to the EC2
+instance was established using MobaXterm via an SSH session with a .pem key
+file.Python3 and pip were installed on the instance,and a simple HTTP
+server was hosted on port 8000,accessible via the EC2's public
+IP.Finally,security was configured by adding inbound security group rules
+and NACL rules to control and test TCP traffic on port 8000.
+
+--000000000000ab41970654d1b952
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">PROJECT-1<br>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0REPORT ANALYSIS<br>1.VPC Creation:<br>=C2=A01.1 =
+Open the AWS management console and navigate to vpc<br>=C2=A01.2 Select cre=
+ate vpc and choose vpc and more<br>=C2=A01.3 Configure the ipv4 CIDR block,=
+availability zones,and public/private subnets =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0<br>=C2=A01.4 Create the vpc and verify the resource map<br><b=
+r>2.EC2 Creation:<br>=C2=A02.1 Navigate to the EC2 dashboard<br>=C2=A02.2 L=
+aunch an ubuntu instance<br>=C2=A02.3 Create or select an existing key pair=
+<br>=C2=A02.4 Configure network settings using the custom vpc<br><br>3.Conn=
+ecting to EC2 using MobaXterm:<br>=C2=A03.1 Open MobaXterm<br>=C2=A03.2 Cre=
+ate an SSH session using the EC2 public IP address<br>=C2=A03.3 Set the use=
+rname as ubuntu<br>=C2=A03.4 Import the .pem key file and connect<br><br>4.=
+Installing Python:<br>=C2=A0-&gt; sudo apt update<br>=C2=A0-&gt; sudo apt i=
+nstall python3 -y<br>=C2=A0-&gt; sudo apt install python3-pip -y<br>=C2=A0-=
+&gt; python3 -m http.sever 8000<br>=C2=A0<br>=C2=A0OUTPUT-http://&lt;EC2_PU=
+BLIC_IP&gt;:8000<br><br>5.Configure Security:<br>=C2=A05.1 Add an inbound s=
+ecurity group rule to allow TCP traffic on port 8000<br>=C2=A05.2 Configure=
+ NACL rules to test traffic blocking and filtering<br><br>SUMMARY:<br>=C2=
+=A0 =C2=A0 =C2=A0 This project demonstrates deploying a python web server o=
+n AWS infrastructure.A custom VPC was created eith specific CIDR blocks,ava=
+ilability zones,and public/private subnets,followed by launching an ubuntu =
+EC2 instance connected to the VPC.Remote access to the EC2 instance was est=
+ablished using MobaXterm via an SSH session with a .pem key file.Python3 an=
+d pip were installed on the instance,and a simple HTTP server was hosted on=
+ port 8000,accessible via the EC2&#39;s public IP.Finally,security was conf=
+igured by adding inbound security group rules and NACL rules to control and=
+ test TCP traffic on port 8000. =C2=A0 <br><br></div>
+
+--000000000000ab41970654d1b952--
